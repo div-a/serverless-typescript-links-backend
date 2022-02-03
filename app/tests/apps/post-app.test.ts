@@ -4,7 +4,7 @@ import { Mock, It, Times } from "moq.ts";
 
 import { PostApp } from "../../src/apps/post-app";
 
-import { NoteItem } from "../../src/common/note-item";
+// import { NoteItem } from "../../src/common/note-item";
 import { NoteRepository } from "../../src/common/note-repository";
 import { ApiGatewayResponse } from "../../src/common/apigateway/apigateway-response";
 
@@ -86,8 +86,8 @@ describe("PostApp instance", () => {
         expect.fail("body was not returned in the response");
       }
 
-      const note: NoteItem = JSON.parse(response.body) as NoteItem;
-      expect(note.isComplete).to.equal(false);
+      // const note: NoteItem = JSON.parse(response.body) as NoteItem;
+      // expect(note.numTimesConfirmed).to.equal(false);
     });
 
     it("repository is called to store a single record", async () => {

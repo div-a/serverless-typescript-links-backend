@@ -1,7 +1,7 @@
 export interface NoteItem {
   id: string;
-  userId: string;
-  noteText: string;
+  userId: number;
+  text: string;
   url: string;
   group: string;
   numTimesConfirmed: number;

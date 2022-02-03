@@ -24,13 +24,13 @@ export class PostApp implements LambdaApp {
       note = JSON.parse(event.body);
       const {
         userId,
-        noteText,
+        text: text,
         url,
         group,
         numTimesConfirmed,
         numTimesDenied,
       } = note;
-      if (!userId || !noteText || !url || !group) {
+      if (!userId || !text || !url || !group) {
         console.log("Missing field");
         return { statusCode: 422 };
       }

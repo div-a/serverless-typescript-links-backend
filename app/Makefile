@@ -3,8 +3,8 @@ build-getByIdFunction:
 # workaround https://github.com/aws/aws-sam-cli/issues/2565
 	npm rebuild
 	npm run lint
-	npm run fast-compile
-	npm run fast-test
+# npm run fast-compile
+# npm run fast-test
 	npm prune --production
 ifeq ($(OS),Windows_NT)
 	Xcopy /E * $(ARTIFACTS_DIR)
@@ -17,8 +17,8 @@ build-putItemFunction:
 # workaround https://github.com/aws/aws-sam-cli/issues/2565
 	npm rebuild
 	npm run lint
-	npm run fast-compile
-	npm run fast-test
+# npm run fast-compile
+# npm run fast-test
 	npm prune --production
 ifeq ($(OS),Windows_NT)
 	Xcopy /E * $(ARTIFACTS_DIR)

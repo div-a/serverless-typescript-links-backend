@@ -2,7 +2,6 @@ import { ApiGatewayEvent } from "../common/apigateway/apigateway-event";
 import { ApiGatewayResponse } from "../common/apigateway/apigateway-response";
 import { NoteRepository } from "../common/note-repository";
 import { NoteItem } from "../common/note-item";
-
 import { LambdaApp } from "./lambda-app";
 
 /**

@@ -50,8 +50,12 @@ describe("PostApp instance", () => {
     it("repository is called to get a record by id", async () => {
       const note: NoteItem = {
         id: "123",
-        title: "hello world",
-        isComplete: true,
+        text: "hello world",
+        userId: 1,
+        url: "google.com",
+        group: "programming",
+        numTimesConfirmed: 0,
+        numTimesDenied: 0,
       };
 
       // Stub a getById invocation resolving a Promise with a valid NoteItem

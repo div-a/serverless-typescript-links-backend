@@ -1,2 +1,3 @@
 .aws-sam/build/* 
 app/node_modules/*
+app/dist/* 
